@@ -1,0 +1,134 @@
+/* Styles for the projects section */
+.projects-section {
+    background-color: #7dc14c84;
+    padding: 80px 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .projects-title {
+    font-size: 2rem;
+    margin-bottom: 100px;
+    color: #b67241;
+  }
+  
+  /* Styles for the projects container */
+  .projects-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Styles for individual project */
+  .project {
+    width: 40%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 10px rgb(150, 173, 59);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .project:hover {
+    background-color: #83d672;
+    transform: translateX(-2px) translateY(-2px);
+    box-shadow: 0px 0px 10px 10px rgba(32, 157, 161, 0.799);
+  }
+  
+  /* Additional styles for project headings and paragraphs */
+  .project h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .project p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for project images */
+  .project-image {
+    width: 400px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    margin: 0 auto;
+  }
+  
+  /* Styles for the list inside projects */
+  .project ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .project ul li {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  /* Styles for the "View Details" button */
+  .project button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .project button:hover {
+    background-color: #008a29;
+  }
+  /* Media queries for tablets */
+@media screen and (max-width: 768px) {
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Media queries for phones */
+@media screen and (max-width: 480px) {
+  .projects-title {
+    font-size: 1.5rem;
+    margin-bottom: 60px;
+  }
+
+  .projects-section {
+    padding: 60px 0;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    width: 90%;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .project button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}

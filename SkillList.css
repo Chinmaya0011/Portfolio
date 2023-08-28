@@ -1,0 +1,94 @@
+/* SkillList.css */
+
+.skill-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    height: 100vh;
+  }
+ /* SkillList.css */
+
+/* ... Other CSS rules ... */
+
+.about-me h1,
+.skills-container h1 {
+  text-align: center;
+}
+
+/* ... Rest of the CSS rules ... */
+
+  .about-me {
+    flex: 1;
+    padding: 20px;
+    width: 80%; /* Set the width to 80% */
+    color: rgb(185, 78, 78); /* Set the text color to brown */
+    text-shadow: 1px 1px blue; /* Add text shadow with blue color */
+  }
+  
+  .about-me p {
+    font-size: 1.2rem;
+    text-decoration:solid; /* Add underline text decoration */
+  }
+  
+  .about-me p:hover {
+    animation: textHoverAnimation 1s alternate infinite; /* Add animation on hover */
+  }
+  
+  
+  .skills-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skills-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+    width: calc(33.33% - 20px);
+    background-color: #d7e69c;
+  }
+  
+  .skill:hover {
+    background-color: transparent;
+    transform: scale(1.05);
+    box-shadow: 0 0 rgba(0, 0, 0, 0.1);
+    color: rgb(187, 224, 187);
+  }
+  
+  .skill-name {
+    font-size: 1.2rem;
+    margin: 0;
+ 
+  
+
+  }
+  
+  .skill-level {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 5px;
+  }
+
+

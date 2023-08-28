@@ -1,0 +1,95 @@
+/* Header.css */
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 1rem;
+    margin-left: 10px;
+}
+
+.logo img {
+    max-width: 40px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header nav ul li {
+    margin: 0 1rem;
+}
+
+.header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.header nav ul li a:hover {
+    color: #49c729;
+    text-decoration: underline;
+    font-size: 1.2rem;
+    transition: color 0.4s ease-in, font-size 0.4s ease-in;
+}
+
+/* Additional rule to remove underline on hover */
+.header nav ul li a:hover {
+    text-decoration: none;
+}
+/* Media queries for tablets */
+@media screen and (max-width: 768px) {
+    .header {
+      padding: 0.8rem 0;
+    }
+  
+    .logo img {
+      max-width: 30px;
+    }
+  
+    .header nav ul li {
+      margin: 0 0.8rem;
+    }
+  
+    .header nav ul li a {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Media queries for phones */
+  @media screen and (max-width: 480px) {
+    .logo img {
+      max-width: 25px;
+    }
+  
+    .header nav ul {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    .header nav ul li {
+      margin: 0.4rem 0;
+    }
+  
+    .header nav ul li a {
+      font-size: 0.9rem;
+    }
+  
+    .header {
+      padding: 0.6rem 0;
+    }
+  }
+  

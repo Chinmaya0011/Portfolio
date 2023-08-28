@@ -1,0 +1,181 @@
+/* Home.css */
+
+/* Styles for the home section */
+/* Styles for the home section */
+.home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('./New folder/pexels-ann-h-15309646.jpg'); /* Update with the correct path */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  background-color: #764646; /* Fallback background color */
+}
+
+
+/* Styles for the content container */
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Styles for the left content (image) */
+.content-left {
+  flex: 0 0 40%;
+  position: relative;
+}
+
+.profile-image {
+  margin: 20px;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: none;
+  background-color: #222;
+  box-shadow: 0px 0px 10px 10px rgba(32, 157, 161, 0.799);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+  z-index: 1;
+}
+
+/* Hover effect for zoom-in */
+.profile-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(210, 10, 37, 0.988);
+}
+
+/* Highlight effect for designer */
+.designer {
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Highlight effect for developer */
+.developer {
+  color: rgba(61, 141, 212, 0.68);
+  font-weight: bold;
+  font-size: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Styles for the right content (text) */
+.content-right {
+  flex: 0 0 40%;
+  text-align: justify;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+/* Additional styles for headings and paragraphs */
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 14rem;
+}
+
+.wavy {
+  position: relative;
+  font-size: 20px; /* Set font size */
+  color: blue; /* Set text color */
+}
+.wavy span {
+  position: relative;
+  display: inline-block;
+  color: #d02c2c;
+  animation: animate 2s ease-in-out infinite;
+  animation-delay: calc(0.05s * var(--i));
+}
+
+@keyframes animate {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+
+  20% {
+    transform: translateY(-20px);
+  }
+
+  40%, 100% {
+    transform: translateY(0px);
+  }
+}
+
+
+button {
+  background-color: #008CBA;
+  width: 40%;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect for the button */
+button:hover {
+  background-color: #008a29;
+}
+/* Media queries for phones */
+/* Media queries for phones */
+@media screen and (max-width: 480px) {
+  .home-section {
+    height: 600px;
+    background-size: cover;
+    background-position: top;
+  }
+
+  .home-content {
+    padding: 10px;
+    flex-direction: column-reverse; /* Reverse the order of content for mobile */
+    align-items: center;
+    text-align: center; /* Center-align text content */
+  }
+
+  .content-left,
+  .content-right {
+    flex: 1;
+  }
+
+  .profile-image {
+    width: 70%;
+    margin: 10px auto;
+  }
+
+  h1 {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+
+  /* Additional styles for smaller text in mobile */
+  .wavy {
+    font-size: 16px;
+  }
+
+  .designer,
+  .developer {
+    font-size: 16px;
+  }
+
+  /* Adjust button width and center for better fit on mobile */
+  button {
+    width: 60%;
+    margin-top: 10px; /* Add margin to separate from content */
+    margin-bottom: 20px; /* Add margin to separate from content below */
+  }
+}
